@@ -1,0 +1,15 @@
+version: "3"
+
+services:
+    php:
+        image: thecodingmachine/php:8.1.0-v4-cli
+        ports:
+            - "9000:9000"
+            - "9003:9003"
+        volumes:
+            - .:/application
+        working_dir: "/application"
+        environment:
+            PHP_EXTENSION_XDEBUG: 1
+            XDEBUG_CONFIG: remote_host=host.docker.internal
+            STARTUP_COMMAND_1: composer install

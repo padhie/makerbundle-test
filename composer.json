@@ -1,0 +1,22 @@
+{
+    "name": "padhie/makerbundle-test",
+    "version": "0.0.1",
+    "description": "testing with maker bundle",
+    "authors": [
+        {
+            "name": "padhie",
+            "email": "admin@padhie.de"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "App\\": "src/"
+        }
+    },
+    "require": {
+        "php": "^8.0"
+    },
+    "require-dev": {
+        "symfony/maker-bundle": "^1.44"
+    }
+}
