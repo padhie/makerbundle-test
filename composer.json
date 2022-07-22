@@ -14,7 +14,9 @@
         }
     },
     "require": {
-        "php": "^8.0"
+        "php": "^8.0",
+        "symfony/dependency-injection": "^6.1",
+        "symfony/console": "^6.1"
     },
     "require-dev": {
         "symfony/maker-bundle": "^1.44"
